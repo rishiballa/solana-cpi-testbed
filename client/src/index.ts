@@ -28,8 +28,6 @@ test("it transfers SOL from one wallet to another", async () => {
 	svm.addProgramFromFile(programId, "/app/double.so");
     svm.addProgramFromFile(cpi.address,"/app/cpi.so");
     svm.airdrop(payer.address,lamports(2_000_000_000n))
-
-   const dataaccount= await generateKeyPairSigner();
    const blockhash= svm.latestBlockhash();
    const dataAccount=await generateKeyPairSigner();
 
