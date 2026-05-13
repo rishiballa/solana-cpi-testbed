@@ -1,0 +1,13 @@
+[package]
+name = "CPI"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+
+lib=["cdylib","lib"]
+
+[dependencies]
+borsh = "1.6.1"
+borsh-derive = "1.6.1"
+solana-program = "4.0.0"
